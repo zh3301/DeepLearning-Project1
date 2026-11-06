@@ -1,0 +1,5 @@
+﻿experiment,architecture,trainable_parameters,augmentation,epochs,best_epoch,best_validation_accuracy_pct,kaggle_public_accuracy_pct,notes
+Exp1 Baseline,CustomResNet (2-2-2 blocks),2777674,RandomCrop + RandomHorizontalFlip,50,49,92.54,80.9,Baseline submission
+Exp1 Horizontal Flip TTA,CustomResNet (2-2-2 blocks),2777674,Baseline training; inference averages original and horizontal-flip logits,50,49,92.9,80.7,Same trained Exp1 model; prediction-only experiment
+Exp2 Augmentation,CustomResNet (2-2-2 blocks),2777674,RandomCrop + RandomHorizontalFlip + ColorJitter + RandomErasing,50,49,93.38,82.0,Best validation accuracy among the experiments
+Exp3 Deeper ResNet,DeeperResNet (2-2-3 blocks),3958346,RandomCrop + RandomHorizontalFlip + ColorJitter + RandomErasing,50,46,93.26,82.5,Selected final submission; best public Kaggle score

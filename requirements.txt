@@ -1,0 +1,10 @@
+# Core packages used by the project notebooks
+# Kaggle notebooks include most of these packages by default.
+torch
+torchvision
+numpy
+pandas
+Pillow
+
+# Used in Experiment 1 Colab data acquisition
+kagglehub
